@@ -4,6 +4,7 @@ from models.Model import Model
 from NiceBoatUtils import RaceUtil
 from BoatTicket.Exacta import Exacta
 from BoatTicket.Quinella import Quinella
+from BoatTicket.Trio import Trio
 import numpy as np
 
 ml = Model()
@@ -20,5 +21,10 @@ print(ex.predict())
 qu = Quinella(win_rate)
 print("2連複")
 print(qu.predict())
+
+tri = Trio(win_rate)
+print("3連複")
+print(tri.predict())
+
 
 
