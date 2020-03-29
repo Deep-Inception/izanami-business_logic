@@ -25,6 +25,3 @@ print(qu.predict())
 tri = Trio(win_rate)
 print("3連複")
 print(tri.predict())
-
-
-
