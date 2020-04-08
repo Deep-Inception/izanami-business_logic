@@ -2,9 +2,7 @@
 
 from models.Model import Model
 from NiceBoatUtils import RaceUtil
-from BoatTicket.Exacta import Exacta
-from BoatTicket.Quinella import Quinella
-from BoatTicket.Trio import Trio
+import BoatTicket as bt
 import numpy as np
 
 ml = Model()
@@ -14,14 +12,14 @@ print(pred)
 print("win rate")
 win_rate = RaceUtil.win_rate(pred)
 print(win_rate)
-ex = Exacta(win_rate)
+ex = bt.Exacta.Exacta(win_rate)
 print("2連単")
 print(ex.predict())
 
-qu = Quinella(win_rate)
+qu = bt.Quinella.Quinella(win_rate)
 print("2連複")
 print(qu.predict())
 
-tri = Trio(win_rate)
+tri = bt.Trio.Trio(win_rate)
 print("3連複")
 print(tri.predict())
