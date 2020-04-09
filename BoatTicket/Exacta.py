@@ -1,12 +1,12 @@
 import numpy as np
-from BoatTicket.BoatTicketBase import BoatTicketBase
+from boatticket.boat_ticket_base import BoatTicketBase
 
 # 2連単クラス
 class Exacta(BoatTicketBase):
-   
+
     def __init__(self, pred):
         self.pred = np.reshape(pred, (6))
-    
+
     # 第3予想までを返す
     def predict(self):
         first = super().first_prize_index()
@@ -19,7 +19,7 @@ class Exacta(BoatTicketBase):
             return pred1_2, pred2_1, pred1_3
         else:
             return pred1_2, pred1_3, pred2_1
-    
+
     def is_second(self, first_idx, second_idx, third_idx):
         first_val = self.pred[first_idx]
         second_val = self.pred[second_idx]

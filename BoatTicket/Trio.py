@@ -1,5 +1,5 @@
 import numpy as np
-from BoatTicket.CombinationBoatTicket import CombinationBoatTicket
+from boatticket.combination_boat_ticket import CombinationBoatTicket
 
 # 3連複クラス
 class Trio(CombinationBoatTicket):
@@ -16,7 +16,7 @@ class Trio(CombinationBoatTicket):
                 for k in range(j):
                     all_list.append([k, j, i])
         return all_list
-    
+
     def win_rate(self, combination):
         if len(combination) != 3:
             return None

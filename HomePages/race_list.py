@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from HomePages.Items.RaceListRacer import RaceListRacer
+from homepages.items.race_list_racer import RaceListRacer
 
 
 class RaceList:

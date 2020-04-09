@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from .Items.BeforeInfoRacer import BeforeInfoRacer
+from .items.before_info_racer import BeforeInfoRacer
 
 # BeforeInfoページの情報を保持するクラス
 class BeforeInfo():

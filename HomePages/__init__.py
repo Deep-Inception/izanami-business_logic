@@ -1,1 +1,1 @@
-from . import BeforeInfo, RaceIndex, RaceList
+from . import before_info, race_index, race_list
